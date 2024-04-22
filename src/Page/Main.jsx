@@ -2,8 +2,24 @@ import React from "react";
 import styled from "styled-components";
 import LoginButton from "../Component/LoginButton";
 import MemberButton from "../Component/MemberButton";
+import Logo from "../Component/Logo";
+
+const LayoutWrapper = styled.div`
+  // Logo를 따로 빼서 왼쪽으로
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 104px;
+
+  @media (max-width: 768px) {
+    padding: 24px; // 패딩 줄임
+    gap: 20px; // 간격 조정
+  }
+`;
 
 const ButtonWrapper = styled.div`
+  //회원가입버튼,로그인버튼을 묶음
   & > *:not(:last-child) {
     margin-right: 20px;
   }
@@ -11,10 +27,13 @@ const ButtonWrapper = styled.div`
 
 function Main() {
   return (
-    <ButtonWrapper>
-      <MemberButton />
-      <LoginButton />
-    </ButtonWrapper>
+    <LayoutWrapper>
+      <Logo />
+      <ButtonWrapper>
+        <MemberButton />
+        <LoginButton />
+      </ButtonWrapper>
+    </LayoutWrapper>
   );
 }
 

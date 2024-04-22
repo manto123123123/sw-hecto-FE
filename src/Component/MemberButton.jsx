@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-// 로그인 버튼을 위한 스타일 컴포넌트
+// 회원가입 버튼을 위한 스타일 컴포넌트
 const Member = styled.button`
   width: 99px;
   height: 48px;
@@ -17,7 +17,7 @@ const Member = styled.button`
   cursor: pointer; // 마우스 오버 시 커서를 포인터로 변경합니다.
 `;
 
-// 로그인 버튼 컴포넌트를 사용하는 예제
+// 회원가입 버튼 컴포넌트
 const MemberButton = () => {
   return <Member>회원가입</Member>;
 };
