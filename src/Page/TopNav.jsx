@@ -5,17 +5,16 @@ import MemberButton from "../Component/MemberButton";
 import Logo from "../Component/Logo";
 
 const LayoutWrapper = styled.div`
-  // Logo를 따로 빼서 왼쪽으로
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding: 24px 104px;
-  border-bottom: 2px solid black; // 검은색 줄  추가
+  border-bottom: 2px solid black;
 
   @media (max-width: 768px) {
-    padding: 24px; // 패딩 줄임
-    gap: 20px; // 간격 조정
+    padding: 24px;
+    gap: 20px;
   }
 `;
 
@@ -26,7 +25,7 @@ const ButtonWrapper = styled.div`
   }
 `;
 
-function Main() {
+function TopNav() {
   return (
     <LayoutWrapper>
       <Logo />
@@ -38,4 +37,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default TopNav;

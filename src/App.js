@@ -1,9 +1,11 @@
-import Main from "./Page/Main";
+import TopNav from "./Page/TopNav";
+import TopNav2 from "./Page/TopNav2";
 
 function App() {
   return (
     <div>
-      <Main />
+      <TopNav />
+      <TopNav2 />
     </div>
   );
 }

@@ -17,7 +17,7 @@ const LoginButton = styled.button`
   cursor: pointer; // 마우스 오버 시 커서를 포인터로 변경합니다.
 `;
 
-// 로그인 버튼 컴포넌트를 사용하는 예제
+// 로고 버튼 컴포넌트를 사용하는 예제
 const LoginButtons = () => {
   return <LoginButton>Logo</LoginButton>;
 };
