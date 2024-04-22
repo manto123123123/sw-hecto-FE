@@ -11,6 +11,7 @@ const LayoutWrapper = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   padding: 24px 104px;
+  border-bottom: 2px solid black; // 검은색 줄  추가
 
   @media (max-width: 768px) {
     padding: 24px; // 패딩 줄임
