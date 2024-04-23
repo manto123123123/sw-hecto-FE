@@ -19,12 +19,140 @@ export const LayoutWrapper = styled.div`
   }
 `;
 
+export const MainWrapper = styled.div`
+  //MainNav div설정
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+  height: 884px;
+
+  background: #d5fafc;
+  box-shadow: inset 0px -2px 0px #2d3648;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+`;
+
+export const MainWrapper2 = styled.div`
+  //MainNav2 div설정
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 104px;
+  gap: 40px;
+
+  width: auto;
+  height: 1030px;
+  border-bottom: 2px solid black; //밑에 검은색 줄 추가
+
+  /* WF Base/White */
+  background: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 4;
+  align-self: stretch;
+  flex-grow: 0;
+`;
+
 export const ButtonWrapper = styled.div`
   //탑네비게이션바 회원가입버튼과 로그인버튼을 묶는 div영역
   //회원가입버튼,로그인버튼을 묶음
   & > *:not(:last-child) {
     margin-right: 20px;
   }
+`;
+//---------------------------------------Trainer Component div-----------------------------
+export const Trainer = styled.div`
+  //메인페이지 트레이너 이미지 div설정
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 418.67px;
+  height: 436px;
+
+  /* WF Base/White */
+  background: #ffffff;
+  /* WF Base/800 ⦿ */
+  border: 2px solid #2d3648;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`;
+
+export const ImagePlaceholder = styled.div`
+  //트레이너 이미지 부분
+  box-sizing: border-box;
+  width: 418.67px;
+  height: 220px;
+  flex: none;
+  border-bottom: 2px solid #2d3648;
+  border-radius: 8px;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  overflow: hidden; // 컨테이너를 벗어나는 부분을 숨깁니다.
+  display: flex; // flex를 사용하여 이미지를 중앙에 위치시킵니다.
+  justify-content: center;
+  align-items: center;
+`;
+
+export const StyledImage = styled.img`
+  // 이미지 제한
+  max-width: 100%; // 이미지의 최대 너비를 컨테이너의 너비로 제한합니다.
+  max-height: 100%; // 이미지의 최대 높이를 컨테이너의 높이로 제한합니다.
+`;
+
+export const ContentStack = styled.div`
+  //트레이너 소개글 부분
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 24px;
+  width: 418.67px;
+  height: 216px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+`;
+
+//---------------------------------------트레이너 이미지 div-----------------------------
+export const Trainerdiv = styled.div`
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 40px 0px 0px;
+  gap: 24px;
+  margin: auto;
+
+  width: 1304px;
+  height: 476px;
+  border-bottom: 2px solid #2d3648;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 `;
 
 export const TrainerButton = styled.button`
@@ -38,7 +166,7 @@ export const TrainerButton = styled.button`
   background: none; //배경 없음
   border: none; //테두리 없음
 
-  width: auto;
+  width: auto; //길이 내용에따라 조절
   height: 48px;
 
   /* Inside auto layout */
