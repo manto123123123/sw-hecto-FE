@@ -3,20 +3,20 @@ import styled from "styled-components";
 //----------------------------------TopNav div-----------------------------------------
 export const LayoutWrapper = styled.div`
   //탑네비게이션바 Logo버튼과 회원가입 로그인버튼 div영역
-  display: flex;
-  flex-direction: row;
+  display: flex; //flexbox 레이아웃을 사용, 요소들을 행(row) 방향으로 배치
+  flex-direction: row; //요소들을 수평 방향으로 배치 (기본값)
   justify-content: ${(props) =>
     props.justifyContent ||
-    "space-between"}; // 기본값 선택 안할시 space between
-  align-items: flex-start;
-  padding: 24px 104px;
-  border-bottom: 2px solid black;
+    "space-between"}; //props로 받은 값이 있으면 그 값을 사용하고, 없으면 'space-between'을 기본값으로 사용 (요소들 사이에 균등한 간격)
+  align-items: flex-start; //수직 축을 기준으로 요소들을 시작점(flex-start)에서 정렬
+  padding: 24px 104px; //요소 내부의 상하좌우 여백을 지정. 상하로는 24px, 좌우로는 104px
+  border-bottom: 2px solid black; // flex 아이템 간의 간격을 지정. props로 받은 값이 있으면 그 값을 사용하고, 없으면 '0px'을 기본값으로 사용
   gap: ${(props) =>
     props.gap || "0px"}; //버튼사이 간격 조절 기본값 선택 안할시 0px
 
   @media (max-width: 768px) {
-    padding: 24px;
-    gap: 20px;
+    padding: 24px; //뷰포트의 너비가 768px 이하일 때, 요소 내부의 상하좌우 여백을 모두 24px로 조절
+    gap: 20px; //뷰포트의 너비가 768px 이하일 때, flex 아이템 간의 간격을 20px로 조절
   }
 `;
 
@@ -34,76 +34,61 @@ export const ButtonWrapper = styled.div`
 export const MainWrapper = styled.div`
   //MainNav div설정
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-
-  height: 884px;
-
-  background: #d5fafc;
-  box-shadow: inset 0px -2px 0px #2d3648;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 3;
-  align-self: stretch;
-  flex-grow: 0;
+  display: flex; // Flexbox 레이아웃을 사용합니다.
+  flex-direction: column; // 아이템들을 수직 방향(열)으로 정렬합니다.
+  justify-content: center; // 컨테이너 내부에서 아이템들을 중앙에 위치시킵니다.
+  align-items: center; // 아이템들을 가로 방향의 중앙에 정렬합니다.
+  padding: 50px; // 모든 방향에서 50px의 안쪽 여백을 설정합니다.
+  height: 884px; // 컨테이너의 높이를 884px로 설정합니다.
+  background: #d5fafc; // 배경색을 하늘색 계열(#d5fafc)로 설정합니다.
+  box-shadow: inset 0px -2px 0px #2d3648; // 안쪽 그림자를 추가하여 안으로 들어간 듯한 효과를 줍니다. 그림자 색상은 #2d3648입니다.
+  flex: none; // flex 항목의 크기가 유연하게 변하지 않도록 설정합니다.
+  order: 3; // Flexbox 컨테이너 내에서 이 아이템의 순서를 세 번째로 설정합니다.
+  align-self: stretch; // 해당 아이템을 부모 요소의 교차 축(cross axis)에 따라 늘립니다.
+  flex-grow: 0; // flex 아이템이 컨테이너 내에서 추가 공간을 차지하지 않도록 설정합니다.
 `;
 
 //-------------------------------------------MainNav2 div------------------------------------
 export const MainWrapper2 = styled.div`
   //MainNav2 div설정
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 120px 104px;
-  gap: 40px;
-
-  width: auto;
-  height: 1030px;
-  border-bottom: 2px solid black; //밑에 검은색 줄 추가
-
-  /* WF Base/White */
-  background: #ffffff;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 4;
-  align-self: stretch;
-  flex-grow: 0;
+  display: flex; // flexbox 디스플레이 설정을 사용
+  flex-direction: column; // 항목을 세로(열) 방향으로 정렬
+  align-items: center; // 크로스 축(center)을 기준으로 항목들을 중앙 정렬
+  padding: 120px 104px; // 상하 120px, 좌우 104px의 패딩을 추가
+  gap: 40px; // flex 항목들 사이의 간격을 40px로 설정
+  width: auto; // 너비를 자동으로 설정
+  height: 1030px; // 높이를 1030px로 설정
+  border-bottom: 2px solid black; // 하단에 2px 두께의 검은색 실선 테두리 추가
+  background: #ffffff; // 배경색을 흰색으로 설정
+  flex: none; // flex 항목의 확장 또는 축소 비율을 설정하지 않음
+  order: 4; // flex 항목의 순서를 4로 설정
+  align-self: stretch; // 항목 스스로를 부모 컨테이너의 교차 축에 따라 늘림
+  flex-grow: 0; // flex 항목이 컨테이너 내의 여분의 공간을 차지하지 않도록 설정
 `;
 
 //---------------------------------------Trainer Component div-----------------------------
 export const Trainer = styled.div`
   //메인페이지 트레이너 이미지 div설정
-  box-sizing: border-box;
 
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-
-  width: 418.67px;
-  height: 436px;
-
-  /* WF Base/White */
-  background: #ffffff;
-  /* WF Base/800 ⦿ */
-  border: 2px solid #2d3648;
-  border-radius: 8px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  box-sizing: border-box; // div의 크기 계산 방식을 경계 상자 기준으로 설정
+  display: flex; // Flexbox 레이아웃 사용
+  flex-direction: column; // 항목을 세로 방향으로 정렬
+  align-items: flex-start; // 세로 방향의 시작 지점(flex-start)에서 항목들을 정렬
+  padding: 0px; // 내부 여백 없음
+  width: 418.67px; // 너비 설정
+  height: 436px; // 높이 설정
+  background: #ffffff; // 배경색 흰색
+  border: 2px solid #2d3648; // 테두리는 2픽셀 굵기의 짙은 회색
+  border-radius: 8px; // 테두리 모서리 둥글게
+  flex: none; // flex 항목 크기 조정 비활성화
+  order: 0; // flex 항목의 순서 기본값
+  flex-grow: 0; // flex 항목의 확장 비율 기본값(0은 확장되지 않음)
 `;
 
 export const ImagePlaceholder = styled.div`
   //트레이너 이미지 부분
+
   box-sizing: border-box;
   width: 418.67px;
   height: 220px;
