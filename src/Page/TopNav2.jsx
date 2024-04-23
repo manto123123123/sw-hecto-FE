@@ -1,25 +1,22 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useState } from "react";
+import { LayoutWrapper } from "../StyleFile/StyleFile";
 import TrainerButton from "../Component/TrainerButton";
-
-const LayoutWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 24px 104px;
-  border-bottom: 2px solid black;
-
-  @media (max-width: 768px) {
-    padding: 24px;
-    gap: 20px;
-  }
-`;
+import StudentButton from "../Component/StudentButton";
 
 function TopNav2() {
+  // 선택된 버튼을 추적하는 상태 (null, 'trainer', 'student')
+  const [selected, setSelected] = useState(null);
+
   return (
-    <LayoutWrapper>
-      <TrainerButton />
+    <LayoutWrapper justifyContent="flex-start" gap="50px">
+      <TrainerButton
+        onClick={() => setSelected("trainer")}
+        isSelected={selected === "trainer"}
+      />
+      <StudentButton
+        onClick={() => setSelected("student")}
+        isSelected={selected === "student"}
+      />
     </LayoutWrapper>
   );
 }
