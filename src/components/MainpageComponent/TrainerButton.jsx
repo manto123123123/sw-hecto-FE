@@ -1,5 +1,5 @@
 import React from "react";
-import { TrainerButton } from "../../styles/Style";
+import { TrainerButton } from "../../styles/Buttonstyle";
 import FindTrainer from "../../assets/FindTrainer.png";
 
 // 트레이너선택 버튼 컴포넌트

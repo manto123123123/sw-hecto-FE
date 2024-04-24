@@ -1,4 +1,4 @@
-import { HelpButton } from "../../styles/Style";
+import { HelpButton } from "../../styles/Buttonstyle";
 import HelpIcon from "../../assets/HelpIcon.svg";
 
 function HelpButton1() {

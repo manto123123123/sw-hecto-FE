@@ -1,10 +1,10 @@
 import React from "react";
 import {
   BottomNav,
-  BottomButton,
   BottomButtondiv,
   RightButtonsWrapper,
 } from "../../styles/Style";
+import { BottomButton } from "../../styles/Buttonstyle";
 import Logo from "../MainpageComponent/Logo";
 
 function BottomNav1() {
