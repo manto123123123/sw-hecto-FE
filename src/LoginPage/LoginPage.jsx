@@ -1,5 +1,6 @@
 import { LoginPagediv, LoginBox } from "../StyleFile/StyleFile";
 import PhoneNumber from "../LoginComponent/PhoneNumber";
+import HelpButton from "../LoginComponent/HelpButton";
 
 function LoginPage() {
   return (
@@ -9,6 +10,7 @@ function LoginPage() {
         <blackbold>휴대폰 번호를 인증해주세요</blackbold>
         <whitebold>처음 오신 분, 기존 이용자 모두 진행해주세요 !</whitebold>
         <PhoneNumber />
+        <HelpButton />
       </LoginBox>
     </LoginPagediv>
   );

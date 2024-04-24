@@ -365,3 +365,17 @@ margin-top: 10px;
 }
  }
 `;
+
+//--------------------------------------인증안될시 클릭하는 버튼 ---------------------------------------------
+export const HelpButton = styled.button`
+width: 100px;
+height: 16px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 7px;
+line-height: 16px;
+background: none;
+cursor: pointer; // 마우스 오버 시 커서를 포인터로 변경합니다.
+ }
+`;
