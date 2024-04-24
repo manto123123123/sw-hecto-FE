@@ -305,7 +305,7 @@ export const LoginPagediv = styled.div`
     font-family: "Sans Serif Collection", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 16px;
     margin-bottom: 30px;
   }
@@ -331,7 +331,7 @@ export const LoginBox = styled.div`
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 16px;
     color: #2d3648;
   }
@@ -341,12 +341,12 @@ export const LoginBox = styled.div`
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 16px;
     color: #717d96;
     letter-spacing: -0.01em;
     font-feature-settings: "calt" off;
-    margin-top: 3px;
+    margin-top: 6px;
   }
 `;
 
@@ -368,14 +368,19 @@ margin-top: 10px;
 
 //--------------------------------------인증안될시 클릭하는 버튼 ---------------------------------------------
 export const HelpButton = styled.button`
-width: 100px;
-height: 16px;
+width: auto;
+height: auto;
+display: flex;
+align-items: flex-start;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
-font-size: 7px;
-line-height: 16px;
+font-size: 11px;
+line-height: 15px;
 background: none;
+border: none;
+margin-top: 10px;
+color: #999;
 cursor: pointer; // 마우스 오버 시 커서를 포인터로 변경합니다.
  }
 `;
