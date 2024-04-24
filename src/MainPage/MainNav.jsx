@@ -5,7 +5,7 @@ import MainImage from "../Photo/Main.jpg";
 function MainNav() {
   return (
     <MainWrapper>
-      <h1>서비스 제목</h1>
+      <h1>FITNESS.UNIV</h1>
       <img src={MainImage} alt="트레이너 찾기" />
     </MainWrapper>
   );

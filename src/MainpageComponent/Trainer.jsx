@@ -13,7 +13,7 @@ const StudentButton = () => {
       <ImagePlaceholder>
         <StyledImage src={sadick} alt="트레이너 찾기" />
       </ImagePlaceholder>
-      <ContentStack>트레이너 소개란 </ContentStack>
+      <ContentStack>마사딕 선생님 </ContentStack>
     </Trainer>
   );
 };

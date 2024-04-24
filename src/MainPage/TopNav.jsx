@@ -1,8 +1,8 @@
 import React from "react";
 import { LayoutWrapper, ButtonWrapper } from "../StyleFile/StyleFile";
-import LoginButton from "../Component/LoginButton";
-import MemberButton from "../Component/MemberButton";
-import Logo from "../Component/Logo";
+import LoginButton from "../MainpageComponent/LoginButton";
+import MemberButton from "../MainpageComponent/MemberButton";
+import Logo from "../MainpageComponent/Logo";
 
 function TopNav() {
   return (

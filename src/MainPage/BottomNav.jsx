@@ -5,7 +5,7 @@ import {
   BottomButtondiv,
   RightButtonsWrapper,
 } from "../StyleFile/StyleFile";
-import Logo from "../Component/Logo";
+import Logo from "../MainpageComponent/Logo";
 
 function BottomNav1() {
   return (

@@ -1,17 +1,10 @@
-import TopNav from "./Page/TopNav";
-import TopNav2 from "./Page/TopNav2";
-import MainNav from "./Page/MainNav";
-import MainNav2 from "./Page/MainNav2";
-import BottomNav from "./Page/BottomNav";
+import MainPage from "./MainPage/MainPage";
+import LoginPage from "./LoginPage/LoginPage";
 
 function App() {
   return (
     <div>
-      <TopNav />
-      <TopNav2 />
-      <MainNav />
-      <MainNav2 />
-      <BottomNav />
+      <LoginPage />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { LayoutWrapper } from "../StyleFile/StyleFile";
-import TrainerButton from "../Component/TrainerButton";
-import StudentButton from "../Component/StudentButton";
-import EtcButton from "../Component/EtcButton";
+import TrainerButton from "../MainpageComponent/TrainerButton";
+import StudentButton from "../MainpageComponent/StudentButton";
+import EtcButton from "../MainpageComponent/EtcButton";
 
 function TopNav2() {
   // 선택된 버튼을 추적하는 상태 (null, 'trainer', 'student')

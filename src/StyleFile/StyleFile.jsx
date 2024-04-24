@@ -128,22 +128,19 @@ export const ContentStack = styled.div`
 //---------------------------------------트레이너 이미지 div-----------------------------
 export const Trainerdiv = styled.div`
   /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 40px 0px 0px;
-  gap: 24px;
-  margin: auto;
-
-  width: 1304px;
-  height: 476px;
-  border-bottom: 2px solid #2d3648;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
+  display: flex; // flexbox 디스플레이 타입 설정
+  flex-direction: row; // 항목들을 가로 방향으로 정렬
+  align-items: flex-start; // 항목들을 컨테이너의 시작 부분으로 정렬
+  padding: 40px 0px 0px; // 상단에 40px, 좌우는 0px, 하단은 0px의 패딩 설정
+  gap: 24px; // 항목들 사이의 간격을 24px로 설정
+  margin: auto; // 마진을 자동으로 설정하여 중앙 정렬
+  width: 1304px; // 너비를 1304px로 설정
+  height: 476px; // 높이를 476px로 설정
+  border-bottom: 2px solid #2d3648; // 하단에 2px 두께의 #2d3648 색상의 실선 테두리 추가
+  flex: none; // flex 항목의 크기 조정을 비활성화
+  order: 1; // flex 항목의 순서를 1로 설정
+  align-self: stretch; // 컨테이너를 꽉 채우도록 스스로를 늘림
+  flex-grow: 0; // flex 항목의 확장 비율을 0으로 설정하여 추가 공간을 차지하지 않음
 `;
 
 export const TrainerButton = styled.button`
@@ -294,4 +291,77 @@ export const RightButtonsWrapper = styled.div`
   display: flex;
   margin-left: auto; // 왼쪽의 모든 여백을 차지하여 오른쪽 정렬
   gap: 10px; // 버튼 사이의 간격
+`;
+
+//---------------------------------LoginPage 화면 최상위 div ----------------------------------------------
+export const LoginPagediv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  h1 {
+    //  로그인/회원가입 글꼴
+    font-family: "Sans Serif Collection", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 30px;
+  }
+`;
+
+//--------------------------------LoginPage 기능박스 div ------------------------------------------
+export const LoginBox = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 25px 15px;
+  width: 418px;
+  height: auto;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+  blackbold {
+    //휴대폰번호 인증 글꼴
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2d3648;
+  }
+
+  whitebold {
+    //처음오신분 모두 인증해주세요 글꼴
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    color: #717d96;
+    letter-spacing: -0.01em;
+    font-feature-settings: "calt" off;
+    margin-top: 3px;
+  }
+`;
+
+//-----------------------------------휴대폰 인증번호받는 box div ----------------------------------------------
+export const PhoneNumber = styled.input`
+box-sizing: border-box;
+width: 388px;
+height: 43px;
+border: 1px solid #CBD2E0;
+border-radius: 6px;
+margin-top: 10px;
+::placeholder {
+    font-size: 16px; // 조정하고 싶은 글씨 크기로 변경
+    color: #999;
+    margin-left: 10px;
+}
+ }
 `;
