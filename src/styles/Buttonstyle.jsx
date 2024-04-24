@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+//---------------------------------------------사용된 버튼들을 모아둔 css파일 ------------------------------------
+
 //-----------------------------------------메인페이지 트레이너 찾기 버튼 css ----------------------------------------------
 export const TrainerButton = styled.button`
   //트레이너 찾기 버튼css
@@ -124,4 +126,36 @@ export const HelpButton = styled.button`
   margin-top: 10px; // 버튼 상단의 외부 여백을 10픽셀로 설정합니다.
   color: #999; // 버튼의 글자 색상을 #999(회색조)로 설정합니다.
   cursor: pointer; // 마우스 오버 시 커서 모양을 포인터(손가락 모양)로 변경합니다.
+`;
+
+//---------------------------------------로그인페이지 인증번호 전송 버턴 ----------------------------------------------------
+export const SendNumberButton = styled.button`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 24px;
+  gap: 8px;
+  width: 388px;
+  height: 34px;
+  background: #1db5be;
+  border-radius: 6px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  border: none;
+  margin-top: 25px;
+  cursor: pointer; // 마우스 오버 시 커서 모양을 포인터(손가락 모양)로 변경합니다.
+  h1 {
+    margin-bottom: 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    font-feature-settings: "calt" off;
+    color: #ffffff;
+  }
 `;

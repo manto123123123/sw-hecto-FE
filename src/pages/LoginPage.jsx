@@ -1,6 +1,7 @@
 import { LoginPagediv, LoginBox } from "../styles/Style";
 import PhoneNumber from "../components/LoginComponent/PhoneNumber";
 import HelpButton from "../components/LoginComponent/HelpButton";
+import SendNumberButton from "../components/LoginComponent/SendNumberButton";
 
 function LoginPage() {
   return (
@@ -11,6 +12,7 @@ function LoginPage() {
         <whitebold>처음 오신 분, 기존 이용자 모두 진행해주세요 !</whitebold>
         <PhoneNumber />
         <HelpButton />
+        <SendNumberButton />
       </LoginBox>
     </LoginPagediv>
   );
