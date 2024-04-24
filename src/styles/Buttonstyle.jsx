@@ -147,6 +147,8 @@ export const SendNumberButton = styled.button`
   border: none;
   margin-top: 25px;
   cursor: pointer; // 마우스 오버 시 커서 모양을 포인터(손가락 모양)로 변경합니다.
+  opacity: ${(props) => (props.isFilled ? "1" : "0.5")}; // 투명도 조절
+  transition: opacity 0.5s ease; // 투명도 변화에 애니메이션 효과 추가
   h1 {
     margin-bottom: 10px;
     font-family: "Inter";

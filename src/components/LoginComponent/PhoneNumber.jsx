@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { PhoneNumber } from "../../styles/Style";
+import { SendNumberButton, HelpButton } from "../../styles/Buttonstyle";
+import HelpIcon from "../../assets/HelpIcon.svg";
 
 function PhoneNumber1() {
   // 전화번호 상태 관리
@@ -20,13 +22,29 @@ function PhoneNumber1() {
     setPhone(formattedValue); // 상태 업데이트
   };
 
+  //전화번호가 다 찾는지 확인하는 변수
+  const isPhoneFilled = phone.length === 13;
+
   return (
-    <PhoneNumber
-      type="text"
-      placeholder="'-'를 제외한 휴대폰 번호"
-      value={phone} // 입력값을 phone 상태로 설정
-      onChange={handleChange} // 입력값 변경 시 handleChange 함수 호출
-    />
+    <div>
+      <PhoneNumber
+        type="text"
+        placeholder="'-'를 제외한 휴대폰 번호"
+        value={phone}
+        onChange={handleChange}
+      />
+      <HelpButton>
+        <img
+          src={HelpIcon}
+          alt="도움말 아이콘"
+          style={{ width: "16px", height: "16px", marginRight: "5px" }} //이미지크기조정
+        />
+        인증이 안되시나요?
+      </HelpButton>
+      <SendNumberButton isFilled={isPhoneFilled}>
+        <h1>인증번호 전송</h1>
+      </SendNumberButton>
+    </div>
   );
 }
 
