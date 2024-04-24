@@ -1,4 +1,4 @@
-import { LoginPagediv, LoginBox } from "../StyleFile/StyleFile";
+import { LoginPagediv, LoginBox } from "../styles/Style";
 import PhoneNumber from "../LoginComponent/PhoneNumber";
 import HelpButton from "../LoginComponent/HelpButton";
 

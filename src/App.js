@@ -1,10 +1,10 @@
-import MainPage from "./MainPage/MainPage";
-import LoginPage from "./LoginPage/LoginPage";
+import MainPage from "./pages/MainPage";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
     <div>
-      <LoginPage />
+      <MainPage />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { MemberButton } from "../StyleFile/StyleFile";
+import { MemberButton } from "../styles/Style";
 
 // 회원가입 버튼 컴포넌트
 const MemberButton1 = () => {

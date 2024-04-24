@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PhoneNumber } from "../StyleFile/StyleFile";
+import { PhoneNumber } from "../styles/Style";
 
 function PhoneNumber1() {
   // 전화번호 상태 관리
