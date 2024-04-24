@@ -1,5 +1,5 @@
-import { HelpButton } from "../styles/Style";
-import HelpIcon from "../assets/HelpIcon.svg";
+import { HelpButton } from "../../styles/Style";
+import HelpIcon from "../../assets/HelpIcon.svg";
 
 function HelpButton1() {
   return (

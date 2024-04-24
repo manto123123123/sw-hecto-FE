@@ -1,6 +1,6 @@
 import { LoginPagediv, LoginBox } from "../styles/Style";
-import PhoneNumber from "../LoginComponent/PhoneNumber";
-import HelpButton from "../LoginComponent/HelpButton";
+import PhoneNumber from "../components/LoginComponent/PhoneNumber";
+import HelpButton from "../components/LoginComponent/HelpButton";
 
 function LoginPage() {
   return (
