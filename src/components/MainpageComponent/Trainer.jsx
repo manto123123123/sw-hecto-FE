@@ -4,8 +4,8 @@ import {
   ImagePlaceholder,
   ContentStack,
   StyledImage,
-} from "../styles/Style";
-import sadick from "../Photo/sadick.jpg";
+} from "../../styles/Style";
+import sadick from "../../assets/sadick.jpg";
 
 const StudentButton = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { LayoutWrapper } from "../styles/Style";
+import { LayoutWrapper } from "../../styles/Style";
 import TrainerButton from "../MainpageComponent/TrainerButton";
 import StudentButton from "../MainpageComponent/StudentButton";
 import EtcButton from "../MainpageComponent/EtcButton";

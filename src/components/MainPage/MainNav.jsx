@@ -1,6 +1,6 @@
 import React from "react";
-import { MainWrapper } from "../styles/Style";
-import MainImage from "../assets/Main.jpg";
+import { MainWrapper } from "../../styles/Style";
+import MainImage from "../../assets/Main.jpg";
 
 function MainNav() {
   return (

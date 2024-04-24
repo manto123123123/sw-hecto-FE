@@ -1,8 +1,8 @@
-import TopNav from "../MainPage/TopNav";
-import TopNav2 from "../MainPage/TopNav2";
-import MainNav from "../MainPage/MainNav";
-import MainNav2 from "../MainPage/MainNav2";
-import BottomNav from "../MainPage/BottomNav";
+import TopNav from "../components/MainPage/TopNav";
+import TopNav2 from "../components/MainPage/TopNav2";
+import MainNav from "../components/MainPage/MainNav";
+import MainNav2 from "../components/MainPage/MainNav2";
+import BottomNav from "../components/MainPage/BottomNav";
 
 function MainPage() {
   return (

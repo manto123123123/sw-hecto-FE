@@ -1,5 +1,5 @@
 import React from "react";
-import { MainWrapper2, Trainerdiv } from "../styles/Style";
+import { MainWrapper2, Trainerdiv } from "../../styles/Style";
 import Trainer from "../MainpageComponent/Trainer";
 
 function MainNav2() {
