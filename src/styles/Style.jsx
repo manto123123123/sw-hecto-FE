@@ -253,10 +253,10 @@ height: 43px; // 입력창의 높이를 설정합니다.
 border: 1px solid #CBD2E0; // 입력창의 테두리를 설정합니다. 1px 두께, solid 타입, #CBD2E0 색상
 border-radius: 6px; // 입력창의 모서리를 둥글게 처리합니다. 모서리의 반경을 6px로 설정
 margin-top: 10px; // 입력창 위쪽의 외부 여백을 설정합니다.
+padding-left: 16px;
 ::placeholder { // 입력창 내의 플레이스홀더 스타일을 지정합니다.
     font-size: 16px; // 플레이스홀더의 글씨 크기를 설정합니다.
     color: #999; // 플레이스홀더의 글씨 색상을 설정합니다.
-    margin-left: 10px; // 플레이스홀더 내용의 왼쪽 여백을 설정합니다.
 }
  }
 `;

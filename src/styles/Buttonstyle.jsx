@@ -150,7 +150,6 @@ export const SendNumberButton = styled.button`
   opacity: ${(props) => (props.isFilled ? "1" : "0.5")}; // 투명도 조절
   transition: opacity 0.5s ease; // 투명도 변화에 애니메이션 효과 추가
   h1 {
-    margin-bottom: 10px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
@@ -159,5 +158,6 @@ export const SendNumberButton = styled.button`
     letter-spacing: -0.01em;
     font-feature-settings: "calt" off;
     color: #ffffff;
+    margin-top: 30px;
   }
 `;
