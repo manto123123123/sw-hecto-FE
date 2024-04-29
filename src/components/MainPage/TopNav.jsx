@@ -3,6 +3,7 @@ import { LayoutWrapper, ButtonWrapper } from "../../styles/Style";
 import LoginButton from "../MainpageComponent/LoginButton";
 import MemberButton from "../MainpageComponent/MemberButton";
 import Logo from "../MainpageComponent/Logo";
+import { Link } from "react-router-dom";
 
 function TopNav() {
   return (
@@ -10,7 +11,9 @@ function TopNav() {
       <Logo />
       <ButtonWrapper>
         <MemberButton />
-        <LoginButton />
+        <Link to="/sign-in">
+          <LoginButton />
+        </Link>
       </ButtonWrapper>
     </LayoutWrapper>
   );
