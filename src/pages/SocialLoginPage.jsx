@@ -1,7 +1,11 @@
 import SocialLoginComponent from "../components/SocialLoginComponent/SocialLoginComponent";
 
 function SocialLoginPage() {
-  return <SocialLoginComponent></SocialLoginComponent>;
+  return (
+    <div>
+      <SocialLoginComponent></SocialLoginComponent>
+    </div>
+  );
 }
 
 export default SocialLoginPage;
