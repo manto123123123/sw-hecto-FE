@@ -10,7 +10,9 @@ function TopNav() {
     <LayoutWrapper>
       <Logo />
       <ButtonWrapper>
-        <MemberButton />
+        <Link to="/sign-up">
+          <MemberButton />
+        </Link>
         <Link to="/sign-in">
           <LoginButton />
         </Link>
