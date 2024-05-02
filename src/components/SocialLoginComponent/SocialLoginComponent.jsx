@@ -1,6 +1,7 @@
 // import React from "react";
 import styled from "styled-components";
 import Logo from "../CommonComponent/Logo";
+import SocialLoginButtons from "./SocialLoginButton";
 
 //소셜로그인 화면 최상위 div
 export const SocialLoginPagediv = styled.div`
@@ -58,40 +59,6 @@ export const ButtonContainer = styled.div`
   justify-content: center;
 `;
 
-export const Button = styled.button`
-  //정렬
-  border-radius: 4px;
-  border: solid 1px #c2c2c2;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 15px;
-  /* margin-bottom: 15px; */
-  //여백
-  padding: 0px;
-  border: 0px;
-  //글꼴
-  font-family: "Sans Serif Collection", sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  //스타일
-  background-color: #ffffff;
-`;
-
-export const GoogleLogo = styled.img`
-  width: 100%;
-  height: 100%;
-`;
-
-export const KakaoLogo = styled.img`
-  width: 100%;
-  height: 100%;
-`;
-
-export const NaverLogo = styled.img`
-  width: 100%;
-  height: 100%;
-`;
-
 function SocialLoginComponent() {
   return (
     <SocialLoginPagediv>
@@ -103,15 +70,7 @@ function SocialLoginComponent() {
             SNS계정으로 간편하게 시작하기
           </SocialLoginBoxTitle>
           <ButtonContainer>
-            <Button>
-              <GoogleLogo src="/SocialLoginLogo/Google/web_light_sq_ctn@3x.png"></GoogleLogo>
-            </Button>
-            <Button>
-              <KakaoLogo src="/SocialLoginLogo/Kakao/kakao_login_large_wide.png"></KakaoLogo>
-            </Button>
-            <Button>
-              <NaverLogo src="/SocialLoginLogo/Naver/btnG_완성형.png"></NaverLogo>
-            </Button>
+            <SocialLoginButtons />
           </ButtonContainer>
         </SocialLoginFillBox>
       </SocialLoginBox>

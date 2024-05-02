@@ -12,6 +12,7 @@ function App() {
           <Route path="" element={<MainPage />} />
           <Route path="/sign-in" element={<LoginPage />} />
           <Route path="/sign-up" element={<SocialLoginPage />} />
+          <Route path="/login/oauth2/callback/kakao" />
         </Routes>
       </BrowserRouter>
     </div>
